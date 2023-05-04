@@ -4,16 +4,30 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/css/index.scss" />
     <title>Vite App</title>
   </head>
   <body>
-    <nav class="nav">
-      <a href="/" class="nav__link" data-link>Dashboard</a>
-      <a href="/posts" class="nav__link" data-link>Posts</a>
-      <a href="/settings" class="nav__link" data-link>Settings</a>
-    </nav>
-    <div class="overlay"></div>
-    <div id="webgl"></div>
+    <div class="loader-container">
+      <div class="spinner"></div>
+    </div>
+    <header class="nav-header">
+      <div><a href="/" data-link="" id="logo">My Cool Project</a></div>
+      <nav class="header-nav">
+          <ul class="header-links">
+              <li><a class="headerLink" href="/" data-link="">Dashboard</a></li>
+              <li><a class="headerLink" href="/posts" data-link="">Posts</a></li>
+              <li><a class="headerLink" href="/settings" data-link="">Settings</a></li>
+              <li><a class="headerLink" href="/projects" data-link="">Projects</a></li>
+          </ul>
+      </nav>
+      <div class="menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+  </header>
+    <canvas id="webgl"></canvas>
     <div id="app"></div>
     <footer><p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Your Name All Rights Reserved</p></footer>
     <script type="module" src="/src/js/index.js"></script>
