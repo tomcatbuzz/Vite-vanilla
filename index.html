@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/css/index.scss" />
+    <!-- <link rel="stylesheet" href="/src/css/index.scss" /> -->
     <title>Vite App</title>
   </head>
   <body>
@@ -30,6 +30,16 @@
     <canvas id="webgl"></canvas>
     <div id="app"></div>
     <footer><p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Your Name All Rights Reserved</p></footer>
+    <svg class="cursor cursor--large" width="60" height="60" viewBox="0 0 60 60">
+			<circle class="cursor__inner" cx="30" cy="30" r="20" />
+		</svg>
+		<svg class="cursor cursor--small" width="60" height="60" viewBox="0 0 60 60">
+			<circle class="cursor__inner" cx="30" cy="30" r="5" />
+		</svg>
+		<svg class="cursor cursor--close" width="40" height="40" viewBox="0 0 512 512">
+			<line x1="368" y1="368" x2="144" y2="144" />
+			<line x1="368" y1="144" x2="144" y2="368" />
+		</svg>
     <script type="module" src="/src/js/index.js"></script>
   </body>
 </html>

@@ -4,7 +4,8 @@ import PostView from "./views/PostView.js";
 import Settings from "./views/Settings.js";
 import Projects from './views/Projects.js';
 import { transition } from "./transition3.js";
-// import "/src/css/index.scss";
+import "/src/css/index.scss";
+import Cursors from "./Cursors.js";
 
 const loaderContainer = document.querySelector('.loader-container');
 window.addEventListener('load', () => {
@@ -93,12 +94,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 navigateTo(e.target.href);
             },500)
             addAnimation()
+            
         } 
     // }
     // canvas(document.querySelector('#webgl'));
     });
     
     router();
+    Cursors.init();
 });
 
 // changes adding custom event
